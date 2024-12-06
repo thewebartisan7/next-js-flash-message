@@ -1,0 +1,57 @@
+{
+  "name": "next-js-flash-message",
+  "version": "1.0.0",
+  "description": "NextJS Flash Message",
+  "keywords": [
+    "nextjs",
+    "flash message",
+    "toast message"
+  ],
+  "homepage": "https://github.com/thewebartisan7/next-js-flash-message",
+  "bugs": {
+    "url": "https://github.com/thewebartisan7/next-js-flash-message/issues"
+  },
+  "author": "Damir Grgic <hello@damir.swiss> (https://damir.swiss)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thewebartisan7/next-js-flash-message.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "ci": "npm run build && npm run check-format && npm run check-exports && npm run test",
+    "format": "prettier --write .",
+    "check-format": "prettier --check .",
+    "check-exports": "attw --pack . --ignore-rules=cjs-resolves-to-esm --ignore-rules=no-resolution",
+    "test": "vitest run --silent",
+    "dev": "vitest",
+    "local-release": "changeset version && changeset publish",
+    "prepublishOnly": "npm run ci"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.js",
+  "exports": {
+    ".": "./dist/index.js",
+    "./actions": "./dist/actions/index.js",
+    "./components": "./dist/components/index.js",
+    "./hooks": "./dist/hooks/index.js"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@arethetypeswrong/cli": "^0.17.0",
+    "@changesets/cli": "^2.27.10",
+    "@types/react": "^18.3.12",
+    "prettier": "^3.4.0",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "peerDependencies": {
+    "next": "^14",
+    "next-themes": "^0.4.3",
+    "react": "^18",
+    "sonner": "^1.5"
+  }
+}

@@ -9,9 +9,9 @@ It integrates seamlessly with [Sonner](https://github.com/emilkowalski/sonner) f
 To use the package, first install it via npm or yarn:
 
 ```bash
-npm install next-js-flash-message
+npm install @thewebartisan7/next-flash-message
 # or
-yarn add next-js-flash-message
+yarn add @thewebartisan7/next-flash-message
 ```
 
 ## Features

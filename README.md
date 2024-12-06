@@ -234,6 +234,7 @@ npm test
 ## Credits and Acknowledgments
 
 Thanks to [Robin Wieruch](https://www.robinwieruch.de/) for his insightful tutorials on Next.js.
+
 Kudos to [Emil Kowalski](https://github.com/emilkowalski) for the amazing [Sonner](https://github.com/emilkowalski/sonner) toast library.
 
 Feel free to contribute, report issues, or suggest improvements via the [GitHub repository](https://github.com/thewebartisan7/next-js-flash-message). Happy coding! 🚀
